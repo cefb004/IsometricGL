@@ -18,7 +18,7 @@ Retro design: supports 8-directional isometric movement, large Neo Geo style spr
 Portability: desktop-first (Windows), with potential Android/iOS support via Love2D wrappers.
 
 ## 3. Engine Responsibilities
-3.1 Core Loop
+### 3.1 Core Loop
 
 Love2D handles love.load, love.update(dt), and love.draw callbacks.
 
@@ -115,7 +115,7 @@ Collision detection (bounding box or simple grid-based for map tiles).
 Debugging tools: optional FPS display, debug overlay, hitboxes.
 
 ## 4. Mini-Engine Directory Structure
-´´´
+```
 /src
  ├─ main.lua           # Love2D entry point
  ├─ engine/
@@ -126,7 +126,7 @@ Debugging tools: optional FPS display, debug overlay, hitboxes.
  ├─ player.lua         # Player entity
  ├─ enemy.lua          # Enemy entities
  └─ utils.lua          # Timers, collision, debug
-´´´
+```
 
 Key Points:
 
