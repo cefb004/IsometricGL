@@ -1,0 +1,25 @@
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor / IDE
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Love2D specific
+*.love
+*.exe
+*.dll
+
+# Lua cache
+*.luac
+
+# Temporary / logs
+*.log
+*.tmp
+
+# Optional: ignore libraries if you manage them manually
+libs/
+
