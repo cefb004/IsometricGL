@@ -1,11 +1,11 @@
-ENGINE.md – IsometricGL Mini-Engine (Love2D / Lua)
-1. Overview
+# ENGINE.md – IsometricGL Mini-Engine (Love2D / Lua)
+## 1. Overview
 
 This document describes the technical foundation of the IsometricGL mini-engine, built on Love2D and Lua. The engine is lightweight, modular, and specifically designed to support a Diablo-like, isometric arcade RPG with retro Neo Geo aesthetics.
 
 The goal is fast prototyping, clean architecture, and easy expansion, while taking advantage of Love2D’s built-in capabilities.
 
-2. Engine Philosophy
+## 2. Engine Philosophy
 
 Minimal and modular: the engine exists to serve the game, not the other way around.
 
@@ -17,7 +17,7 @@ Retro design: supports 8-directional isometric movement, large Neo Geo style spr
 
 Portability: desktop-first (Windows), with potential Android/iOS support via Love2D wrappers.
 
-3. Engine Responsibilities
+## 3. Engine Responsibilities
 3.1 Core Loop
 
 Love2D handles love.load, love.update(dt), and love.draw callbacks.
@@ -49,7 +49,7 @@ Animation timer and frame switching built-in.
 Handles large Neo Geo-style sprites (e.g., 64x128 px).
 
 Example structure:
-´´´
+```
 sprite.lua
  └─ Sprite class
      ├─ image
@@ -57,7 +57,7 @@ sprite.lua
      ├─ animation state
      ├─ update(dt)
      └─ draw(x, y)
-´´´
+```
 3.4 Camera System
 
 Isometric camera (2:1 ratio) with smooth following.
@@ -114,7 +114,7 @@ Collision detection (bounding box or simple grid-based for map tiles).
 
 Debugging tools: optional FPS display, debug overlay, hitboxes.
 
-4. Mini-Engine Directory Structure
+## 4. Mini-Engine Directory Structure
 ´´´
 /src
  ├─ main.lua           # Love2D entry point
@@ -136,7 +136,7 @@ Game entities (player, enemies, projectiles) use engine modules.
 
 Allows clean separation of game logic and engine functionality.
 
-5. Technical Decisions
+## 5. Technical Decisions
 
 | Feature     | Decision                            | Notes                                               |
 | ----------- | ----------------------------------- | --------------------------------------------------- |
@@ -151,7 +151,7 @@ Allows clean separation of game logic and engine functionality.
 | Portability | Lua + Love2D                        | Cross-platform: Windows, Linux, macOS, mobile later |
 
 
-6. Out of Scope (Initially)
+## 6. Out of Scope (Initially)
 
 Visual editor
 
@@ -163,7 +163,7 @@ Complex shaders or 3D effects
 
 Full game engine features like Unity/Godot
 
-7. Future Enhancements
+## 7. Future Enhancements
 
 Hot-reload of Lua modules for faster iteration.
 
