@@ -1,6 +1,6 @@
-# IsometricGL
+# Isometric-2D
 
-**IsometricGL** is a lightweight 2D isometric game framework built with **Love2D** and **Lua**, inspired by **Diablo-like gameplay** and the **Neo Geo retro philosophy**. The project aims to provide a solid foundation for fast prototyping of isometric games, with a focus on **large sprites, smooth animations, and classic retro aesthetics**.
+**Isometric-2D** is a lightweight 2D isometric game framework built with **Love2D** and **Lua**, inspired by **Diablo-like gameplay** and the **Neo Geo retro philosophy**. The project aims to provide a solid foundation for fast prototyping of isometric games, with a focus on **large sprites, smooth animations, and classic retro aesthetics**.
 
 ---
 
@@ -31,7 +31,7 @@ Focus is on:
 
 ## ��� Project Structure
 ```
-IsometricGL_Lua/
+Isometric_Lua/
 ├── main.lua # Main entry point
 ├── conf.lua # Love2D configuration
 ├── assets/ # All sprites, tiles, sounds
@@ -49,7 +49,7 @@ IsometricGL_Lua/
 
 ```bash
 git clone <your-repo-url>
-cd IsometricGL_Lua
+cd Isometric_Lua
 Run the game:
 
 bash
@@ -98,6 +98,6 @@ Love2D allows fast iteration, hot-reload testing, and minimal setup compared to 
 
 Philosophy: Neo Geo / Diablo-like retro aesthetic with modern Lua convenience.
 
-## ��� License
+��� License
 
 MIT License – feel free to use and modify for personal or educational projects.
