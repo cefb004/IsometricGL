@@ -75,7 +75,7 @@ Scalable viewport: 2x, 3x, 4x with no blur
 
 Character Sprites
 
-Size: 64x128 pixels
+Size: 64x128 pixels, 64x96 pixels
 
 Palette: 32 colors per character
 
